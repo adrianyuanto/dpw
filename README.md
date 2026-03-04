@@ -42,7 +42,5 @@ Untuk menunjang produktivitas, saya menggunakan:
 
 ### 📊 GitHub Stats
 
-![Adrian's GitHub stats](https://github-readme-stats.vercel.app/api?username=USERNAME_KAMU&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=USERNAME_KAMU&layout=compact&theme=radical)
-
-*"Code is like humor. When you have to explain it, it’s bad."
+![Adrian's GitHub stats](https://github-readme-stats.vercel.app/api?username=adrianyuanto&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=adrianyuanto&layout=compact&theme=radical)
