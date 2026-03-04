@@ -9,8 +9,8 @@ Saya adalah mahasiswa **D3 Teknik Informatika di Politeknik Negeri Madiun**. Say
 ### 🛠️ Tech Stack & Skills
 
 - **Languages:** Java, C++, SQL
-- **Web & Backend:** HTML, CSS, JavaScript (sedang mendalami integrasi Firestore)
-- **Cybersecurity & Networking:** SIEM (Wazuh), Network Security Concepts
+- **Web & Backend:** sedang dalam proses belajar (HTML, CSS, JavaScript)
+- **Cybersecurity & Networking:** sedang dalam proses belajar SIEM (Wazuh), Network Security Concepts
 - **Tools:** Git, GitHub, Linux Environments
 
 ---
@@ -18,8 +18,8 @@ Saya adalah mahasiswa **D3 Teknik Informatika di Politeknik Negeri Madiun**. Say
 ### 🎮 Beyond the Code
 
 Saat tidak sedang menulis kode atau mengerjakan tugas kuliah, biasanya saya:
-- **Gaming:** Menjelajahi dunia *open-world* di *The Witcher 3*, *GTA V*, atau *Watch Dogs*.
-- **Hardware:** Ngulik periferal PC (sedang menikmati *setup* dengan Xiaomi A24i).
+- **Gaming:** Menjelajahi dunia *open-world* dan FPS
+- **Hardware:** Ngulik periferal PC (sedang membuat *setup* dengan Xiaomi A24i).
 - **Learning:** Mengeksplorasi distribusi Linux yang cocok untuk produktivitas.
 
 ---
@@ -27,20 +27,16 @@ Saat tidak sedang menulis kode atau mengerjakan tugas kuliah, biasanya saya:
 ### 💻 My Gear
 
 Untuk menunjang produktivitas, saya menggunakan:
-- **Laptop:** Advan Workmate Plus (Ryzen 5 3500U | 16GB Dual Channel RAM)
-- **Daily Driver:** POCO M4 Pro & Samsung Galaxy S8+
+- **Laptop:** Advan Workmate Plus (Ryzen 5 3500U | Radeon Vega 8)
+- **PC** Intel Quad Core 9505s | Nvidia GTX 745
 - **Monitor:** Xiaomi Monitor A24i (2026 Edition)
+- **Daily Driver:** POCO M4 Pro
 
 ---
 
 ### 📫 Let's Connect!
 
 - **Instagram:** [@adrianyuant](https://instagram.com/adrianyuant)
-- **LinkedIn:** [Tautan LinkedIn Kamu]
+- **LinkedIn:** [Adrian Yuanto](https://www.linkedin.com/in/adrian-yuanto-1637ba344?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
----
 
-### 📊 GitHub Stats
-
-![Adrian's GitHub stats](https://github-readme-stats.vercel.app/api?username=adrianyuanto&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=adrianyuanto&layout=compact&theme=radical)
