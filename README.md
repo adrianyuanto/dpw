@@ -31,7 +31,7 @@ Saat tidak sedang menulis kode atau mengerjakan tugas kuliah, biasanya saya:
 ### 💻 My Gear
 
 Untuk menunjang produktivitas, saya menggunakan:
-- **Laptop:** Advan Workmate Plus (Ryzen 5 3500U | Radeon Vega 8)
+- **Laptop:** Advan Workmate (Ryzen 5 3500U | Radeon Vega 8)
 - **PC** Intel Quad Core 9505s | Nvidia GTX 745
 - **Monitor:** Xiaomi Monitor A24i (2026 Edition)
 - **Daily Driver:** POCO M4 Pro
