@@ -4,6 +4,10 @@
 
 Saya adalah mahasiswa **D3 Teknik Informatika di Politeknik Negeri Madiun**. Saya memiliki ketertarikan besar dalam pengembangan perangkat lunak, manajemen basis data, dan keamanan jaringan. Saat ini, saya sedang aktif mengasah kemampuan saya di bidang *cybersecurity*
 
+Nama   : Adrian Yuanto
+NIM    : 253307014
+Kelas  : 2A
+
 ---
 
 ### 🛠️ Tech Stack & Skills
