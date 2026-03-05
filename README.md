@@ -1,8 +1,8 @@
 # Hi there, I'm Adrian Yuanto! 👋
 
-### 👨‍💻 Informatics Engineering Student | Tech Enthusiast | Gamer
+### 👨‍💻 Information Technology Student | Tech Enthusiast | Gamer
 
-Saya adalah mahasiswa **D3 Teknik Informatika di Politeknik Negeri Madiun**. Saya memiliki ketertarikan besar dalam pengembangan perangkat lunak, manajemen basis data, dan keamanan jaringan. Saat ini, saya sedang aktif mengasah kemampuan saya di bidang *cybersecurity*
+Saya adalah mahasiswa **D3 Teknologi Informasi di Politeknik Negeri Madiun**. Saya memiliki ketertarikan besar dalam pengembangan perangkat lunak, manajemen basis data, dan keamanan jaringan. Saat ini, saya sedang aktif mengasah kemampuan saya di bidang *cybersecurity*
 
 - Nama   : Adrian Yuanto
 - NIM    : 253307014
