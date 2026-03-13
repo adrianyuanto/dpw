@@ -1,43 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Div dan Span - Image Map Peta Indonesia</title>
-    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
+    <link rel="icon" type="img/png" href="https://www.bgn.go.id/logo-bgn.png" sizes="16x16" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel='stylesheet' href='css/main.css'>
+    <title>Peta Interaktif Pulau Indonesia</title>
 </head>
 <body>
-    
-    <div id="header">
-        <h1>Peta Interaktif Indonesia</h1>
+    <div id="content">
+        <h1>Peta Interaktif Pulau Indonesia</h1>
+        <p>Gambar di bawah ini adalah peta interaktif yang menunjukkan pulau-pulau utama di Indonesia. Setiap pulau memiliki area yang dapat diklik untuk mengakses informasi lebih lanjut tentang pulau tersebut.</p>
+        <img src="https://lh5.googleusercontent.com/-wsvnzEocxiI/T6uJI7SUw6I/AAAAAAAAAaY/gARUNd1gTGo/s989/Provinces+of+Indonesia.jpg" usemap="#image-map">
+
+    <map name="image-map">
+    <area target="" alt="Palimantan" title="Palimantan" href="https://id.wikipedia.org/wiki/Kalimantan" coords="509,252,297,-1" shape="rect">
+    <area target="" alt="Papua" title="Papua" href="https://id.wikipedia.org/wiki/Papua" coords="756,137,986,354,959,336" shape="rect">
+    <area target="" alt="Jawa" title="Jawa" href="https://id.wikipedia.org/wiki/Jawa" coords="452,351,223,270" shape="rect">
+    <area target="" alt="Sumatra" title="Sumatra" href="https://id.wikipedia.org/wiki/Sumatra" coords="12,27,243,291" shape="rect">
+    <area target="" alt="Sulawesi" title="Sulawesi" href="https://id.wikipedia.org/wiki/Sulawesi" coords="511,97,653,283" shape="rect">
+    </map>
+        <p>Pulau yang dapat di klik:</p>
+        <p><a href="https://id.wikipedia.org/wiki/Sumatra">Sumatra</a>, <a href="https://id.wikipedia.org/wiki/Jawa">Jawa</a>, <a href="https://id.wikipedia.org/wiki/Kalimantan">Kalimantan</a>, <a href="https://id.wikipedia.org/wiki/Sulawesi">Sulawesi</a>, <a href="https://id.wikipedia.org/wiki/Papua">Papua</a></p>
+        <p><strong>Kesimpulan:</strong> Penggunaan tag <code>&lt;map&gt;</code> sangat efektif untuk membuat satu gambar statis menjadi navigasi yang kaya akan tautan (*link*). Keberhasilan interaksi ini sangat bergantung pada alamat URL yang tepat sebagai sumber data dan ketelitian dalam menentukan titik-titik koordinat pada atribut <code>coords</code> agar sesuai dengan piksel gambar yang ditampilkan.</p>
     </div>
-
-    <div id="main"> 
-        <div id="content">
-            <img src="https://lh5.googleusercontent.com/-wsvnzEocxiI/T6uJI7SUw6I/AAAAAAAAAaY/gARUNd1gTGo/s989/Provinces+of+Indonesia.jpg" alt="Peta Indonesia" usemap="#petaindonesia" style="max-width: 100%; height: auto;">
-            
-            <map name="petaindonesia">
-                <area shape="rect" coords="10,20,320,260" alt="Pulau Sumatra" href="https://id.wikipedia.org/wiki/Sumatra" title="Pulau Sumatra">
-                <area shape="rect" coords="240,265,580,360" alt="Pulau Jawa" href="https://id.wikipedia.org/wiki/Jawa" title="Pulau Jawa">
-                <area shape="rect" coords="370,40,600,230" alt="Pulau Kalimantan" href="https://id.wikipedia.org/wiki/Kalimantan" title="Pulau Kalimantan">
-                <area shape="rect" coords="600,100,750,280" alt="Pulau Sulawesi" href="https://id.wikipedia.org/wiki/Sulawesi" title="Pulau Sulawesi">
-                <area shape="rect" coords="780,140,980,310" alt="Pulau Papua" href="https://id.wikipedia.org/wiki/Papua" title="Pulau Papua">
-            </map>
-            <p>Pulau yang dapat di klik:</p>
-            <p>Pulau Sumatra</p>
-            <p>Pulau Jawa</p>
-            <p>Pulau Kalimantan</p>
-            <p>Pulau Sulawesi</p>
-            <p>Pulau Papua</p>
-            <p>Kesimpulan: Tag HTML &lt;map&gt; mendefinisikan peta gambar. Pada contoh ini, kita menggunakan peta Indonesia. Area ditentukan dengan tag &lt;area&gt;. Jika kamu mengklik area Pulau Sumatra, Jawa, Kalimantan, Sulawesi, atau Papua, halaman akan diarahkan ke artikel Wikipedia masing-masing pulau tersebut.</p>
-        </div>
-
-    </div>
-
-    <div id="footer">
-        <i>copyright@AdrianYuanto_253307014_2026</i>
-    </div>
-
 </body>
 </html>

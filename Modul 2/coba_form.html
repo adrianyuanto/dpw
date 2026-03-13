@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <title>Form Sederhana</title>
-    <link rel="icon" type="img/png" href="gambar/icon.png" sizes="16x16" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <form action="/action_page.php" method="POST" target="_blank">
+    <form action="/action_page.php" method="post" target="_blank">
         <label for="depan">Nama depan: </label><br>
-        <input type="text" id="depan" name="i_name" value="Budi"><br>
+        <input type="text" id="depan" name="i_name" value="Adrian"><br><br>
+        
         <label for="n_belakang">Nama Belakang:</label><br>
-        <input type="text" id="n_belakang" name="i_belakan" value="Prawira"><br><br>
+        <input type="text" id="n_belakang" name="i_belakan" value="Yuanto"><br><br>
+        
         <input type="submit" value="Kirim">
         <input type="reset" value="Reset">
     </form>
-    <p>Jika Anda mengklik tombol "Kirim", data formulir akan dikirim ke halaman bernama "/action_page.php".</p>
     
-    <p>Kesimpulan: Tombol "Reset" akan mengembalikan form ke isian awal (Budi Prawira). Tombol "Kirim" akan mengeksekusi action. Menambahkan atribut target="_blank" membuat halaman proses terbuka di tab/jendela baru. Metode pengiriman "GET" akan menampilkan data yang diinput pada URL browser, sedangkan metode "POST" menyembunyikan data tersebut di belakang layar sehingga lebih aman.</p>
+    <p>Jika Anda mengklik tombol "Kirim", data formulir akan dikirim ke halaman "/action_page.php".</p>
+    
+    <p><strong>Kesimpulan Uji Coba Form:</strong> 
+    1. Tombol <strong>Reset</strong> menghapus input dan mengembalikan nilai ke "Adrian" dan "Yuanto". <br>
+    2. Tombol <strong>Kirim</strong> mengarahkan data ke link di `action`. <br>
+    3. Atribut `target="_blank"` membuat form terbuka di tab baru saat dikirim. <br>
+    4. Jika menggunakan `method="get"`, data input akan terlihat menyambung pada URL, sedangkan `method="post"` akan menyembunyikan data di URL dan mengirimnya melalui badan (body) HTTP.
+    </p>
 </body>
 </html>
