@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://upload.wikimedia.org/wikipedia/commons/7/70/Logo_Nusantara.png" sizes="16x16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <title>CSS Grid Layout Web</title>
+    <style>
+        .grid-layout {
+            display: grid;
+            grid-template-areas:
+                'header header header header'
+                'menu main main right'
+                'menu footer footer footer';
+            grid-gap: 10px;
+            background-color: #2196F3;
+            padding: 10px;
+            height: 90vh;
+        }
+
+        .header { grid-area: header; }
+        .menu   { grid-area: menu; }
+        .main   { grid-area: main; }
+        .right  { grid-area: right; }
+        .footer { grid-area: footer; }
+
+        .grid-layout > div {
+            background-color: #e3f2fd;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+            border: 2px solid #1976D2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-layout">
+        <div class="header">Header</div>
+        <div class="menu">Menu</div>
+        <div class="main">Main</div>
+        <div class="right">Right</div>
+        <div class="footer">Footer</div>
+    </div>
+
+</body>
+</html>

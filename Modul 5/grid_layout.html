@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://upload.wikimedia.org/wikipedia/commons/7/70/Logo_Nusantara.png" sizes="16x16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <title>CSS Grid Box</title>
+    <style>
+        .tempat_grid {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-gap: 50px; 
+        }
+        .item_grid {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tampilan CSS Grid: </h1>
+    <div class="tempat_grid">
+        <div class="item_grid">1</div>
+        <div class="item_grid">2</div>
+        <div class="item_grid">3</div>
+        <div class="item_grid">4</div>
+        <div class="item_grid">5</div>
+        <div class="item_grid">6</div>
+        <div class="item_grid">7</div>
+        <div class="item_grid">8</div>
+        <div class="item_grid">9</div>
+    </div>
+    
+    <div style="margin-top:20px; font-family: Arial;"> 
+        <strong>Kesimpulan Ujicoba Grid Skenario 1-4:</strong> 
+        Dengan menetapkan <code>display: grid</code>, elemen akan otomatis terbentuk dalam pola kolom dan baris tetap, berbeda dengan flexbox yang lebih fleksibel menyesuaikan besarnya tampilan. Properti <code>grid-gap: 50px</code> dapat digunakan untuk memberikan jarak antar kotak baik secara vertikal maupun horizontal secara bersamaan
+    </div>
+</body>
+</html>

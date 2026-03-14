@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://upload.wikimedia.org/wikipedia/commons/7/70/Logo_Nusantara.png" sizes="16x16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <title>Flex Box</title>
+    <style>
+        .wadah_flex {
+            display: flex;
+            background-color: #e0e0e0;
+            flex-flow: row wrap; 
+            justify-content: space-around; 
+        }
+
+        .wadah_flex > div {
+            background-color: #097cff;
+            margin: 10px;
+            padding: 20px;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+            width: 50px;
+        }
+        .kesimpulan { padding: 20px; font-family: Arial, sans-serif; }
+    </style>
+</head>
+<body>
+    <div class="wadah_flex">
+        <div>1</div> <div>2</div> <div>3</div> <div>4</div>
+        <div>5</div> <div>6</div> <div>7</div> <div>8</div>
+        <div>9</div> <div>10</div><div>11</div><div>12</div>
+    </div>
+
+    <div class="kesimpulan">
+        <p><strong>Kesimpulan Skenario 1:</strong> Dengan <code>display: flex</code>, elemen di dalam div yang awalnya turun ke bawah (blok) otomatis berjajar secara fleksibel</p>
+        <p><strong>Kesimpulan Skenario 2:</strong> Menambahkan style pada <code>.wadah_flex &gt; div</code> akan memberikan warna, jarak (margin), dan ruang (padding)  pada setiap kotak angka agar tidak menempel satu sama lain.</p>
+        <p><strong>Kesimpulan Skenario 3 & 4:</strong> Dengan menggunakan <code>flex-direction</code> dapat menentukan arah jajaran (baris/kolom). Sedangkan dengan menggunakan <code>flex-wrap: wrap</code> dapat membuat kotak yang kepanjangan melebihi layar untuk turun ke baris baru</p>
+        <p><strong>Kesimpulan Skenario 5:</strong> Menambahkan <code>flex-flow: row wrap;</code> merupakan jalan pintas untuk menggabungkan penulisan arah (row) dan aturan turun baris (wrap) menjadi satu baris kode yang lebih ringkas</p>
+        <p><strong>Kesimpulan Skenario 6:</strong> Mode <code>justify-content: space-around;</code> digunakan untuk mengatur jarak kosong di antara dan di sekeliling kotak flex</p>
+    </div>
+</body>
+</html>

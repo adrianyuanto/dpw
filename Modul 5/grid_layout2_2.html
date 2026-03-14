@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://upload.wikimedia.org/wikipedia/commons/7/70/Logo_Nusantara.png" sizes="16x16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <title>Grid - Lanjutan 2</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-gap: 50px;
+            background-color: #2196F3;
+            padding: 10px;
+            grid-template-columns: 70px 300px auto 40px;
+        }
+        .item {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .item1 {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center; 
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: 1 / 4;    
+            grid-column: 1 / 4; 
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">1 (Besar Horizontal & Vertikal)</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>                               
+        <div class="item">8</div>
+    </div>
+    <div style="margin-top:20px; font-family: Arial;">
+        <p><strong>Kesimpulan:</strong> Model Properti <code>grid-row</code> berfungsi mengatur berapa banyak baris yang akan ditempati oleh suatu elemen. Penggunaan format <code>1 / 4</code> adalah cara cepat untuk menuliskan "mulai dari baris/kolom 1 dan berhenti sebelum baris/kolom 4</p>
+    </div>
+</body>
+</html>
