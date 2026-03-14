@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://upload.wikimedia.org/wikipedia/id/5/5f/Politeknik_Negeri_Madiun.png" sizes="16x16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <title>Pseudo-class Selector</title>
+    <style>
+        p {
+            display: none;
+            background-color: darkgray;
+            padding: 20px;
+        }
+        div:hover p {
+            display: block;
+        }
+        
+        a.link-keren {
+            color: blue;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        a.link-keren:hover {
+            color: red; 
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div> arahkan mouse disini untuk melihat div element
+        <p>Halo saya adalah element p</p>
+    </div>
+    <br><br>
+    
+    <a href="#" class="link-keren">Coba Arahkan Mouse, maka warnanya akan berubah menjadi merah!</a>
+</body>
+</html>

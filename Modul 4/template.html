@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://upload.wikimedia.org/wikipedia/id/5/5f/Politeknik_Negeri_Madiun.png" sizes="16x16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <title>Layout CSS - Adrian Yuanto</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            margin: 0;
+            padding: 10px;
+        }
+        
+        .header {
+            background-color: blue;
+            color: white;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .header h1 { margin: 0; font-size: 32px; color: yellow; font-weight: normal; }
+        .header p { margin: 5px 0 0 0; font-size: 18px; }
+
+        .menu {
+            width: 25%;
+            border: 2px dashed rgb(36, 34, 34);
+            padding: 20px;
+            float: left; 
+            min-height: 350px;
+        }
+        .menu ul { list-style-type: none; padding: 0; margin: 0; }
+        .menu ul li { margin-bottom: 15px; font-size: 20px; }
+        .menu ul li a {
+            text-decoration: none;
+            color: black;
+        }
+        .menu ul li a:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+
+        .main-content {
+            width: 73%;
+            float: right;
+            text-align: center;
+            padding: 20px;
+            min-height: 350px;
+        }
+        .main-content img { width: 150px; }
+        .main-content h1 { margin: 10px 0 0 0; font-size: 36px; color: black; }
+        .main-content h2 { margin: 5px 0 20px 0; font-weight: normal; color: black; }
+        .main-content p {
+            color: #b30000;
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 0 50px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .footer {
+            background-color: #aed6f1;
+            padding: 15px;
+            text-align: right;
+            font-size: 16px;
+            clear: both;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Halo CSS !</h1>
+        <p>Ini adalah website CSS, tugas modul 4</p>
+    </div>
+    
+    <div class="clearfix">
+        <div class="menu">
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+                <li><a href="#">Menu 4</a></li>
+                <li><a href="#">Menu 5</a></li>
+                <li><a href="#" style="font-weight:bold; text-decoration:underline;">Menu 6</a></li>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <img src="https://upload.wikimedia.org/wikipedia/id/5/5f/Politeknik_Negeri_Madiun.png" alt="Logo PNM">
+            <h1>Teknologi Informasi</h1>
+            <h2>Politeknik Negeri Madiun</h2>
+            <p>Mewujudkan pendidikan tinggi vokasi dalam bidang Teknologi Informasi dan penerapannya yang berkualitas, inovatif dan berdaya saing Nasional.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        Adrian Yuanto | 253307014 | TI
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://upload.wikimedia.org/wikipedia/id/5/5f/Politeknik_Negeri_Madiun.png" sizes="16x16"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <title>Combinator Selector</title>
+    <style>
+        div p { color: red; }            
+        div > p { background-color: yellow; } 
+        div + p { background-color: darkgray; } 
+        div ~ p { color: cyan; }            
+    </style>
+</head>
+<body>
+    <div>
+        <p>This is a paragraph. <strong>Kesimpulan No 1:</strong> Selektor <code>div p</code> mengubah teks jadi merah untuk SEMUA elemen paragraf yang ada di dalam tag div, sedalam apa pun letaknya.</p>
+        <p>This is a paragraph. <strong>Kesimpulan No 2:</strong> Selektor <code>div &gt; p</code> memberikan background kuning HANYA pada paragraf yang berada tepat satu tingkat di bawah tag div.</p>
+    </div>
+    
+    <p>This is a paragraph. <strong>Kesimpulan No 3:</strong> Selektor <code>div + p</code> memberikan background abu-abu gelap HANYA pada satu elemen paragraf yang letaknya persis bersebelahan langsung setelah tag penutup &lt;/div&gt;.</p>
+    
+    <p>This is a paragraph. <strong>Kesimpulan No 4:</strong> Selektor <code>div ~ p</code> mengubah teks jadi cyan pada SEMUA elemen paragraf yang letaknya setelah tag div, asalkan masih berada di level yang sama (satu hierarki).</p>
+</body>
+</html>
