@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Media Audio</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://www.bgn.go.id/logo-bgn.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; margin: 0; }
+        header { background-color: #5A7ACD; padding: 30px; text-align: center; font-size: 35px; color: white; }
+        nav { float: left; width: 30%; height: 530px; background: #fdb364; padding: 20px; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { margin-bottom: 10px; }
+        article { float: left; padding: 20px; width: 70%; background-color: #F5F2F2; height: 530px; }
+        section::after { content: ""; display: table; clear: both; }
+        footer { background-color: #2B2A2A; padding: 10px; text-align: center; color: white; }
+        @media (max-width: 600px) {
+            nav, article { width: 100%; height: auto; }
+        }
+    </style>
+</head>
+<body>
+    <header style="position: relative; text-align: center; padding: 50px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9vouvTLOcR1UU_B4zcQG5UuN3lahAscBcA&s" alt="Logo" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 120px; border-radius: 60%;">
+    <h2 style="margin: 0;">Tugas Modul 3</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </nav>
+    <article>
+    <h1>Media Audio</h1>
+    <img src="/Tugas 3/gambar/1.png" alt="Gambar Audio" width="350" 
+                 onmousemove="this.style.boxShadow='10px 10px 15px rgba(0,0,0,0.5)'" 
+                 onmouseout="this.style.boxShadow='none'"
+                 title="Sal Priadi - Ada titik-titik di ujung doa Official Music Video">
+    <p><audio controls autoplay muted>
+        <source src="/Tugas 3/audio/Sal Priadi - Ada titik-titik di ujung doa Official Music Video.mp3" type="audio/mpeg" >
+        Browser tidak mendukung pemutar audio.
+    </audio> </p>
+    <p><strong>Kesimpulan:</strong> Atribut <code>controls</code> menampilkan tombol play/pause. Penambahan atribut <code>autoplay</code> dan <code>muted</code> membuat audio diputar otomatis saat halaman dimuat.</p>
+    </article>
+    </section>
+    <footer>
+        <p>copyright@Adrian Yuanto_253307014_2026</p>
+    </footer>
+</body>
+</html>

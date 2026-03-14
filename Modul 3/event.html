@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Event Gambar</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://www.bgn.go.id/logo-bgn.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; margin: 0; }
+        header { background-color: #5A7ACD; padding: 30px; text-align: center; font-size: 35px; color: white; }
+        nav { float: left; width: 30%; height: 600px; background: #fdb364; padding: 20px; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { margin-bottom: 10px; }
+        article { float: left; padding: 20px; width: 70%; background-color: #F5F2F2; height: 600px; }
+        section::after { content: ""; display: table; clear: both; }
+        footer { background-color: #2B2A2A; padding: 10px; text-align: center; color: white; }
+        @media (max-width: 600px) {
+            nav, article { width: 100%; height: auto; }
+        }
+    </style>
+</head>
+<body>
+    <header style="position: relative; text-align: center; padding: 50px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9vouvTLOcR1UU_B4zcQG5UuN3lahAscBcA&s" alt="Logo" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 120px; border-radius: 60%;">
+    <h2 style="margin: 0;">Tugas Modul 3</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </nav>
+<article>
+            <h1>Event Gambar</h1>
+            <p>Arahkan kursor atau klik gambar-gambar di bawah ini untuk melihat efek dari berbagai Mouse Event.</p>
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_22.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 1" width="150" height="150" 
+                 onmouseover="this.style.border='5px solid red'" 
+                 onmouseout="this.style.border='none'" 
+                 title="Hover (Mouse Over/Out)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_21.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 2" width="150" height="150" 
+                 onclick="alert('Anda baru saja mengklik gambar kedua!')" 
+                 title="Klik Sekali (Onclick)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_23.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 3" width="150" height="150" 
+                 ondblclick="this.style.opacity='0.3'" 
+                 onmouseout="this.style.opacity='1'"
+                 title="Klik Ganda (Ondblclick)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_25.png?98e7c946ce876ea7d197b1d5b84a7a110" alt="Gambar 4" width="150" height="150" 
+                 onmousedown="this.style.transform='scale(0.8)'" 
+                 onmouseup="this.style.transform='scale(1)'"
+                 title="Tekan dan Tahan (Mousedown/Mouseup)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_28.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 5" width="150" height="150" 
+                 style="filter: grayscale(100%);" 
+                 onmouseenter="this.style.filter='grayscale(0%)'" 
+                 onmouseleave="this.style.filter='grayscale(100%)'"
+                 title="Masuk/Keluar Area (Mouseenter/Mouseleave)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_24.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 6" width="150" height="150" 
+                 oncontextmenu="alert('Menu klik kanan dimatikan untuk gambar ini!'); return false;"
+                 title="Klik Kanan (Contextmenu)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_27.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 7" width="150" height="150" 
+                 onmousemove="this.style.boxShadow='10px 10px 15px rgba(0,0,0,0.5)'" 
+                 onmouseout="this.style.boxShadow='none'"
+                 title="Gerak Kursor (Mousemove)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_26.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 8" width="150" height="150" 
+                 onwheel="this.style.borderRadius='50%'" 
+                 onmouseout="this.style.borderRadius='0'"
+                 title="Scroll Mouse (Onwheel)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_5.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 9" width="150" height="150" 
+                 draggable="true"
+                 ondragstart="this.style.opacity='0.4'; this.style.border='4px dashed black'; this.style.transform='rotate(10deg)'" 
+                 ondragend="this.style.opacity='1'; this.style.border='none'; this.style.transform='rotate(0deg)'"
+                 title="Klik, Tahan, lalu Seret (Dragstart/Dragend)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_15.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 10" width="150" height="150" 
+                 onmouseover="this.style.transform='rotateY(180deg)'" 
+                 onmouseout="this.style.transform='rotateY(0deg)'" 
+                 title="Arahkan Kursor (Mouseover) untuk efek Flip 3D">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_12.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 11" width="150" height="150" 
+                 onpointerenter="this.style.boxShadow='0 0 25px 10px #00ffcc, 0 0 50px 10px #00ffcc'" 
+                 onpointerleave="this.style.boxShadow='none'"
+                 title="Cahaya Neon Layar Sentuh/Mouse (Pointer Events)">
+
+            <img src="https://s3.getstickerpack.com/storage/uploads/sticker-pack/yellow-dino-2/sticker_13.png?98e7c946ce876ea7d197b1d5b84a7a11" alt="Gambar 12" width="150" height="150" 
+                 onmousedown="this.style.filter='invert(100%) hue-rotate(180deg)'; this.style.transform='scale(1.1)'" 
+                 onmouseup="this.style.filter='none'; this.style.transform='scale(1)'"
+                 onmouseleave="this.style.filter='none'; this.style.transform='scale(1)'"
+                 title="Tekan & Tahan untuk X-Ray Mode">
+
+            <br><br>
+            <p><strong>Kesimpulan:</strong> Berbagai variasi pada Mouse Event memungkinkan kita untuk membuat antarmuka web yang jauh lebih interaktif. Setiap event memicu reaksi berbeda berdasarkan tindakan user, hal ini terkait dengan apa yang ada di program</p>
+        </article>
+    </section>
+    <footer>
+        <p>copyright@Adrian Yuanto_253307014_2026</p>
+    </footer>
+</body>
+</html>

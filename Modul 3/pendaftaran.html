@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Form Pendaftaran</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="img/png" href="https://www.bgn.go.id/logo-bgn.png" sizes="16x16" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Adrian Yuanto">
+    <meta name="nim" content="253307014">
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, Helvetica, sans-serif; margin: 0; }
+        header { background-color: #5A7ACD; padding: 30px; text-align: center; font-size: 35px; color: white; }
+        nav { float: left; width: 30%; height: 800px; background: #fdb364; padding: 20px; }
+        nav ul { list-style-type: none; padding: 0; }
+        nav ul li { margin-bottom: 10px; }
+        article { float: left; padding: 20px; width: 70%; background-color: #F5F2F2; height: 800px; }
+        section::after { content: ""; display: table; clear: both; }
+        footer { background-color: #2B2A2A; padding: 10px; text-align: center; color: white; }
+        @media (max-width: 600px) {
+            nav, article { width: 100%; height: auto; }
+        }
+    </style>
+</head>
+<body>
+    <header style="position: relative; text-align: center; padding: 50px;">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9vouvTLOcR1UU_B4zcQG5UuN3lahAscBcA&s" alt="Logo" style="position: absolute; left: 20px; top: 50%; transform: translateY(-50%); width: 120px; border-radius: 60%;">
+    <h2 style="margin: 0;">Tugas Modul 3</h2>
+    </header>
+    <section>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gambar.html">Gambar</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="audio.html">Audio</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="svg.html">SVG</a></li>
+                <li><a href="canvas.html">Canvas</a></li>
+                <li><a href="pendaftaran.html">Pendaftaran</a></li>
+            </ul>
+        </nav>
+    <article>
+    <h1>Form Penjadwal Pertemuan</h1>
+    <form action="proses.php" method="POST">
+        
+        <fieldset>
+            <legend>Informasi Pribadi</legend>
+            <label>Nama:</label><br>
+            <input type="text" name="nama" required><br><br>
+
+            <label>No. Telepon (Format: XXXX-XXXXXX):</label><br>
+            <input type="tel" name="telepon" pattern="[0-9]{4}-[0-9]{6}" title="Format harus 4 angka - 6 angka" required><br><br>
+
+            <label>Alamat Email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Tanggal Lahir (1987 - 1993):</label><br>
+            <input type="date" name="tgl_lahir" min="1987-01-01" max="1993-12-31"><br><br>
+        </fieldset>
+        
+        <br>
+
+        <fieldset>
+            <legend>Permintaan Pertemuan</legend>
+            <label>Tujuan Pertemuan:</label><br>
+            <input type="text" name="tujuan_pertemuan" required><br><br>
+
+            <label>Tingkat Kepentingan Pertemuan (0-10):</label><br>
+            <input type="range" name="tingkat_kepentingan" min="0" max="10" value="5"><br><br>
+
+            <label>Tanggal (Harus setelah hari ini):</label><br>
+            <input type="date" name="tgl_pertemuan" min="2026-03-14" required><br><br>
+
+            <label>Waktu (17.00 - 21.00):</label><br>
+            <input type="time" name="waktu_pertemuan" min="17:00" max="21:00" required><br><br>
+        </fieldset>
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</article>
+    </section>
+    <footer>
+        <p>copyright@Adrian Yuanto_253307014_2026</p>
+    </footer>
+</body>
+</html>
