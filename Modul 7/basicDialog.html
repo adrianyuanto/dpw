@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Dialog</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f3f4f6; margin: 0; padding: 20px; }
+    .btn-back { display: inline-block; margin-bottom: 20px; padding: 8px 15px; background: #3b82f6; color: white; text-decoration: none; border-radius: 5px; font-size: 14px; }
+    .btn-back:hover { background: #2563eb; }
+    .container { max-width: 600px; margin: 20px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
+    .trigger-btn { padding: 12px 24px; font-size: 16px; font-weight: bold; background-color: #10b981; color: white; border: none; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+    .trigger-btn:hover { background-color: #059669; transform: scale(1.05); }
+    .ui-dialog { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; border-radius: 8px !important; }
+  </style>
+</head>
+<body>
+  
+  <div class="container">
+    <div style="text-align: left;"><a href="index.html" class="btn-back">⬅ Kembali</a></div>
+    <h2 style="color: #1e293b; margin-top: 0;">Tugas Basic Dialog jQuery UI</h2>
+    <p style="color: #64748b; margin-bottom: 30px;">Klik tombol di bawah ini untuk memunculkan pesan pop-up menggunakan modal dialog dari jQuery UI.</p>
+    
+    <button id="bukaDialog" class="trigger-btn">Buka Jendela Dialog</button>
+  </div>
+
+  <div id="dialogPesan" title="Informasi Sistem">
+    <p style="margin-top: 10px; line-height: 1.5;">Ini adalah contoh penerapan Basic Dialog bawaan dari jQuery UI.</p>
+    <p style="margin-bottom: 0;">Dialog ini bersifat modal dalam arti tidak bisa klik yang lain sebelum dialog ini ditutup.</p>
+  </div>
+
+  <script>
+  $(document).ready(function() {
+    $("#dialogPesan").dialog({
+      autoOpen: false, 
+      modal: true,     
+      width: 400,
+      buttons: {
+        "Oke, Mengerti": function() {
+          $(this).dialog("close");
+        }
+      }
+    });
+
+    $("#bukaDialog").click(function() {
+      $("#dialogPesan").dialog("open");
+    });
+  });
+  </script>
+</body>
+</html>

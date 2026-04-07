@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>Validasi Masukan</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html" style="position: fixed; top: 20px; left: 20px; padding: 10px 15px; background: #1e293b; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-family: Arial, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.2); z-index: 9999; font-size: 0.9rem;">⬅ Kembali</a>
+<br><br><br>
+
+<SCRIPT LANGUAGE="JavaScript">
+function cekNama(form) {
+    if (form.elements[0].value == "") {
+        alert("Nama harus dimasukkan");
+        form.nama.focus();
+        form.nama.select();
+        return(false);
+    }
+    alert("Terima kasih, " + form.elements[0].value);
+    return(true);
+}
+</SCRIPT>
+<FORM NAME="formku">
+<PRE>
+Nama: <INPUT TYPE="TEXT" NAME="nama"><BR>
+<INPUT TYPE="BUTTON" VALUE="Kirim" onclick="cekNama(this.form)"><BR>
+</PRE>
+</FORM>
+</BODY>
+</HTML>

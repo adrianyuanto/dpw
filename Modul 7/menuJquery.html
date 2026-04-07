@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menu jQuery</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8fafc; margin: 0; padding: 20px; }
+    .btn-back { display: inline-block; margin-bottom: 20px; padding: 8px 15px; background: #3b82f6; color: white; text-decoration: none; border-radius: 5px; font-size: 14px; }
+    .btn-back:hover { background: #2563eb; }
+    
+    nav { background-color: #1e293b; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    ul.menu { list-style: none; margin: 0; padding: 0; display: flex; }
+    ul.menu > li { position: relative; }
+    ul.menu a { display: block; padding: 16px 24px; color: #f8fafc; text-decoration: none; font-weight: 500; transition: 0.2s; }
+    ul.menu > li > a:hover { background-color: #334155; border-radius: 8px; }
+    
+    ul.submenu { display: none; position: absolute; top: 100%; left: 0; background-color: #334155; list-style: none; padding: 0; margin: 0; min-width: 200px; border-radius: 0 0 8px 8px; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); z-index: 10; }
+    ul.submenu a { padding: 12px 24px; border-bottom: 1px solid #475569; font-size: 15px; }
+    ul.submenu li:last-child a { border-bottom: none; border-radius: 0 0 8px 8px; }
+    ul.submenu a:hover { background-color: #475569; padding-left: 28px; }
+
+    .content { padding: 40px 20px; color: #334155; }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="btn-back">⬅ Kembali ke Dashboard</a>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Beranda</a></li>
+      <li class="has-submenu">
+        <a href="#">Profil Perusahaan ▾</a>
+        <ul class="submenu">
+          <li><a href="#">Sejarah Kami</a></li>
+          <li><a href="#">Visi & Misi</a></li>
+          <li><a href="#">Struktur Organisasi</a></li>
+        </ul>
+      </li>
+      <li class="has-submenu">
+        <a href="#">Layanan Kami ▾</a>
+        <ul class="submenu">
+          <li><a href="#">Pengembangan Website</a></li>
+          <li><a href="#">Aplikasi Mobile</a></li>
+          <li><a href="#">Desain UI/UX</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <div class="content">
+    <h2>Selamat Datang</h2>
+    <p>Arahkan kursor Anda ke menu "Profil Perusahaan" atau "Layanan Kami" untuk melihat efek dropdown yang digerakkan menggunakan jQuery <code>slideDown()</code> dan <code>slideUp()</code>.</p>
+  </div>
+
+  <script>
+  $(document).ready(function() {
+    $('.has-submenu').mouseenter(function() {
+      $(this).children('.submenu').stop(true, true).slideDown(200);
+    });
+
+    $('.has-submenu').mouseleave(function() {
+      $(this).children('.submenu').stop(true, true).slideUp(200);
+    });
+  });
+  </script>
+</body>
+</html>

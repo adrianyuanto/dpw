@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>Mengakses Objek radio</TITLE>
+</HEAD>
+<BODY>
+<a href="index.html" style="position: fixed; top: 20px; left: 20px; padding: 10px 15px; background: #1e293b; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-family: Arial, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.2); z-index: 9999; font-size: 0.9rem;">⬅ Kembali</a>
+<br><br><br>
+
+Klik pada mobil yang Anda inginkan<BR>
+<FORM NAME="formTes" METHOD="GET">
+<INPUT TYPE="RADIO" NAME="radioMusik" VALUE="Jazz" onClick="info()">BWW<BR>
+<INPUT TYPE="RADIO" NAME="radioMusik" VALUE="Keroncong" onClick="info()">Mercedes<BR>
+<INPUT TYPE="RADIO" NAME="radioMusik" VALUE="Dangdut" onClick="info()">Jaguar<BR>
+<INPUT TYPE="RADIO" NAME="radioMusik" VALUE="Lainnya" onClick="info()">Lamborghini<BR>
+<HR>
+Info: <INPUT TYPE="TEXT" NAME="fieldMusik" SIZE="40">
+</FORM>
+<SCRIPT LANGUAGE="JavaScript">
+function info() {
+    for (var i=0; i<4; i++) {
+        if (document.formTes.radioMusik[i].checked) {
+            document.formTes.fieldMusik.value = document.formTes.radioMusik[i].value;
+        }
+    }
+}
+</SCRIPT>
+</BODY>
+</HTML>

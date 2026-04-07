@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Download Progressbar</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+  <style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f3f4f6; margin: 0; padding: 20px; }
+    .btn-back { display: inline-block; margin-bottom: 20px; padding: 8px 15px; background: #3b82f6; color: white; text-decoration: none; border-radius: 5px; font-size: 14px; }
+    .btn-back:hover { background: #2563eb; }
+    .container { max-width: 600px; margin: 20px auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; }
+    .trigger-btn { padding: 12px 24px; font-size: 16px; font-weight: bold; background-color: #8b5cf6; color: white; border: none; border-radius: 8px; cursor: pointer; transition: 0.2s; }
+    .trigger-btn:hover { background-color: #7c3aed; transform: scale(1.05); }
+    
+    .ui-dialog { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important; border-radius: 8px !important; }
+    #statusTeks { font-weight: bold; color: #334155; text-align: center; margin-bottom: 15px; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div style="text-align: left;"><a href="index.html" class="btn-back">⬅ Kembali</a></div>
+    <h2 style="color: #1e293b; margin-top: 0;">Simulasi Download Progressbar</h2>
+    <p style="color: #64748b; margin-bottom: 30px;">Tugas penerapan widget Dialog dan Progressbar yang berjalan otomatis menggunakan fungsi <code>setInterval()</code> JavaScript.</p>
+    
+    <button id="btnDownload" class="trigger-btn">File.zip</button>
+  </div>
+
+  <div id="dialogDownload" title="Sedang Mengunduh...">
+    <p id="statusTeks">Persiapan mengunduh... (0%)</p>
+    <div id="progressbar"></div>
+  </div>
+
+  <script>
+  $(document).ready(function() {
+    var timerDownload;
+
+    $("#dialogDownload").dialog({
+      autoOpen: false,
+      modal: true,
+      width: 450,
+      closeOnEscape: false,
+      open: function() {
+        $(this).closest('.ui-dialog').find('.ui-dialog-titlebar-close').hide();
+      },
+      buttons: {
+        "Batal / Tutup": function() {
+          clearInterval(timerDownload);
+          $(this).dialog("close");
+        }
+      }
+    });
+
+    $("#progressbar").progressbar({
+      value: 0
+    });
+
+    $("#btnDownload").click(function() {
+      $("#dialogDownload").dialog("open");
+
+      var persentase = 0;
+      $("#progressbar").progressbar("value", 0);
+      $("#statusTeks").text("Memulai... (0%)").css("color", "#334155");
+
+      clearInterval(timerDownload);
+      
+      timerDownload = setInterval(function() {
+        persentase += Math.floor(Math.random() * 12) + 3;
+        
+        if (persentase >= 100) {
+          persentase = 100;
+          clearInterval(timerDownload);
+          $("#statusTeks").text("Unduhan Selesai! (100%)").css("color", "#10b981");
+          $("#dialogDownload").closest('.ui-dialog').find('.ui-dialog-titlebar-close').show();
+        } else {
+          $("#statusTeks").text("Sedang Mengunduh... (" + persentase + "%)");
+        }
+        
+        $("#progressbar").progressbar("value", persentase);
+      }, 400);
+    });
+  });
+  </script>
+</body>
+</html>

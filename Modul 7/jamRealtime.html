@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jam Real-Time</title>
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #0a0a0f; color: #fff; }
+    .card { text-align: center; padding: 50px 60px; background: #111118; border: 1px solid #2a2a3a; border-radius: 16px; }
+    h2 { margin-bottom: 30px; color: #aaa; font-size: 1rem; letter-spacing: 3px; text-transform: uppercase; font-weight: normal; }
+    #jam { font-family: 'Courier New', monospace; font-size: 4rem; font-weight: bold; color: #5cf8d0; letter-spacing: 6px; text-shadow: 0 0 20px rgba(92,248,208,0.4); }
+    #tanggal { margin-top: 16px; font-size: 1rem; color: #666; letter-spacing: 1px; }
+  </style>
+</head>
+<body>
+  <a href="index.html" style="position: fixed; top: 20px; left: 20px; padding: 10px 15px; background: #1e293b; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-family: Arial, sans-serif; box-shadow: 0 4px 6px rgba(0,0,0,0.2); z-index: 9999; font-size: 0.9rem;">⬅ Kembali</a>
+  <div class="card">
+    <h2>Waktu Saat Ini</h2>
+    <div id="jam">--:--:--</div>
+    <div id="tanggal"></div>
+  </div>
+  <script>
+    function updateWaktu() {
+      var now   = new Date();
+      var hari  = ['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
+      var bulan = ['Januari','Februari','Maret','April','Mei','Juni',
+                   'Juli','Agustus','September','Oktober','November','Desember'];
+
+      var jam    = String(now.getHours()).padStart(2, '0');
+      var menit  = String(now.getMinutes()).padStart(2, '0');
+      var detik  = String(now.getSeconds()).padStart(2, '0');
+
+      document.getElementById('jam').innerHTML = jam + ':' + menit + ':' + detik;
+      document.getElementById('tanggal').innerHTML =
+        hari[now.getDay()] + ', ' + now.getDate() + ' ' +
+        bulan[now.getMonth()] + ' ' + now.getFullYear();
+    }
+
+    updateWaktu();
+    setInterval(updateWaktu, 1000);
+  </script>
+</body>
+</html>
