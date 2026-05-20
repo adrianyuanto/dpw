@@ -1,0 +1,357 @@
+/* ========== RESET & BASE ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== TYPOGRAPHY ========== */
+h1, h2, h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.4em; }
+h3 { font-size: 1.1em; }
+
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* ========== FORM ========== */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea,
+select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.95em;
+    font-family: inherit;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+textarea {
+    max-width: 400px;
+    resize: vertical;
+}
+
+/* ========== BUTTONS ========== */
+input[type="submit"],
+button,
+.btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+    font-family: inherit;
+    background-color: #3498db;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+input[type="submit"]:hover,
+button:hover,
+.btn:hover {
+    background-color: #2980b9;
+}
+
+input[type="reset"] {
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.95em;
+    background-color: #eee;
+    color: #333;
+}
+
+input[type="reset"]:hover {
+    background-color: #ddd;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* ========== TABLE ========== */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px;
+    margin: 10px 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Table tanpa border (untuk form layout) */
+table.no-border,
+table.no-border td {
+    border: none;
+    background: none;
+}
+
+table.no-border td {
+    padding: 6px 10px;
+}
+
+/* ========== ALERTS & MESSAGES ========== */
+.success {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.error {
+    color: #e74c3c;
+    font-size: 0.85em;
+}
+
+.info-box {
+    background: #eaf6ff;
+    border: 1px solid #90caf9;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.alert-error {
+    background: #fdecea;
+    border: 1px solid #ef9a9a;
+    color: #c62828;
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    font-size: 0.9em;
+}
+
+.success-box {
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* ========== CARDS (for index page) ========== */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s;
+    display: block;
+}
+
+.card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    text-decoration: none;
+}
+
+.card h3 {
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.card .file-name {
+    font-size: 0.8em;
+    color: #999;
+    font-family: monospace;
+}
+
+.card .badge {
+    display: inline-block;
+    font-size: 0.7em;
+    padding: 2px 8px;
+    background: #eee;
+    border-radius: 10px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* ========== GALLERY ========== */
+.galeri {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.galeri-item {
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.galeri-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.galeri-item p {
+    font-size: 0.8em;
+    padding: 6px;
+    color: #555;
+    word-break: break-all;
+    margin: 0;
+}
+
+/* ========== LOGIN BOX ========== */
+.login-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 8px;
+    max-width: 380px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    max-width: 100%;
+    margin: 4px 0 10px;
+}
+
+/* ========== CODE / PRE ========== */
+pre {
+    background: #2d2d2d;
+    color: #a5d6a7;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    overflow-x: auto;
+}
+
+code {
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* ========== SECTION ========== */
+.section {
+    margin-bottom: 25px;
+}
+
+/* ========== HEADER (index page) ========== */
+.page-header {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+}
+
+.page-header h1 {
+    margin-bottom: 5px;
+}
+
+.page-header p {
+    color: #777;
+    font-size: 0.95em;
+}
+
+/* ========== SECTION TITLE ========== */
+.section-title {
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin: 25px 0 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ========== FOOTER ========== */
+.footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+    font-size: 0.85em;
+    color: #999;
+}
+
+/* ========== BACK LINK ========== */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #3498db;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+}
+
+/* ========== UTILITIES ========== */
+.text-center { text-align: center; }
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }

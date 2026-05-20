@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Form Pendaftaran</h2>
+    <form method="POST" action="proses_pendaftaran.php">
+        <table class="no-border">
+            <tr>
+                <td>Nim :</td>
+                <td><input type="text" name="nim" placeholder="nim"></td>
+            </tr>
+            <tr>
+                <td>Nama Lengkap :</td>
+                <td><input type="text" name="nama" placeholder="nama"></td>
+            </tr>
+            <tr>
+                <td>E-mail :</td>
+                <td><input type="email" name="email" placeholder="email"></td>
+            </tr>
+            <tr>
+                <td>Tempat Lahir :</td>
+                <td><input type="text" name="tempat" placeholder="tempat"></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir :</td>
+                <td><input type="date" name="tgl_lahir"></td>
+            </tr>
+            <tr>
+                <td>Alamat :</td>
+                <td><input type="text" name="alamat" placeholder="alamat"></td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    <input type="radio" name="gender" value="Laki-Laki"> Laki-Laki
+                    <input type="radio" name="gender" value="Perempuan" checked> Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" name="kirim" value="kirim">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <a href="index.php" class="back-link">← Kembali ke Beranda</a>
+</body>
+</html>
